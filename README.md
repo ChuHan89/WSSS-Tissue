@@ -2,7 +2,10 @@
 ![outline](workflow.png)
 
 ## Introduction
-We'll be releasing our code soon.
+This paper is now under review, we will release the code after acceptance.
+
+## Dataset
+We have released both datasets via Google Drive ([LUAD-HistoSeg](https://drive.google.com/drive/folders/1E3Yei3Or3xJXukHIybZAgochxfn6FJpr?usp=sharing) and [BCSS-WSSS](https://drive.google.com/drive/folders/1iS2Z0DsbACqGp7m6VDJbAcgzeXNEFr77?usp=sharing).).
 
 ## Citation
 If you find the code useful, please consider citing our paper using the following BibTeX entry.
