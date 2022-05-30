@@ -50,7 +50,15 @@ bash run_pipeline.sh
 - The whole pipeline of our model includes the step of classification model training, muleti-layer pseudo masks  generation, and segmentation model training. You can use following scripts to run each step.
 - [Note] Please specify the argument in the command. You can also check run_pipeline.sh to see more details.
 #### 1、Train the classification model with the image-level label: 
-- 
+
+```
+python 1_train_stage1.py --dataset luad --trainroot datasets/LUAD-HistoSeg/train/ --testroot dataset/LUAD-HistoSeg/test/ --max_epoches 20 --batch_size 20
+```
+#### 2、Generate multi-layers pesudo mask by classification model: 
+
+```
+python 2_generate_PM.py --datasetroot datasets/LUAD-HistoSeg --dataset luad
+```
 
 ## Reference
 1. Jiwoon Ahn and Suha Kwak. Learning pixel-level semantic affinity with image-level supervision for weakly supervised semantic segmentation. CVPR, 2018.
