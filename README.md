@@ -37,7 +37,7 @@ We would like to thank Amgad et al. for this excellent dataset. The original BCS
 
 ## Prerequisite
 * To train the stage1, you need to download the pretrained weight of the [Mxnet and ResNet-38](https://github.com/itijyou/ademxapp) model [[ilsvrc-cls_rna-a1_cls1000_ep-0001.params]](https://drive.google.com/file/d/1YB3DkHiBeUH5wn6shk93jChvXwfOxwBE/view?usp=sharing)
-* To train the stage2, you need to download the pretrained weight of the [DeepLab V3+](https://github.com/) model [[...]](https://drive.google.com/)
+* To train the stage2, you need to download the pretrained weight of the [DeepLab V3+]([https://github.com/](https://arxiv.org/abs/1802.02611)) model [[...]](https://drive.google.com/)
 
 ## Usage
 ### Run the whole pipeline
