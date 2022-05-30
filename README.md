@@ -1,5 +1,5 @@
 # Multi-Layer Pseudo-Supervision for Histopathology Tissue Semantic Segmentation using Patch-level Classification Labels
-![outline](workflow.pdf)
+![outline](workflow.png)
 
 ## Introduction
 The code of:
