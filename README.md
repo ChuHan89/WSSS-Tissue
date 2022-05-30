@@ -4,7 +4,7 @@
 ## Introduction
 The code of:
 
-**Multi-Layer Pseudo-Supervision for Histopathology Tissue Semantic Segmentation using Patch-level Classification Labels, Chu Han, Jiatai Lin, Jinhai Mai, Yi Wang, Qingling Zhang, Bingchao Zhao, Xin Chen, Xipeng Pan, Zhenwei Shi, Zeyan Xu, Su Yao, Lixu Yan, Huan Lin, Xiaomei Huang, Changhong Liang, Guoqiang Han, Zaiyi Liu, Medical Image Analysis, 2022.**[[Paper]](https://doi.org/10.1016/j.media.2022.102487)
+**Multi-Layer Pseudo-Supervision for Histopathology Tissue Semantic Segmentation using Patch-level Classification Labels**, Chu Han, Jiatai Lin, Jinhai Mai, Yi Wang, Qingling Zhang, Bingchao Zhao, Xin Chen, Xipeng Pan, Zhenwei Shi, Zeyan Xu, Su Yao, Lixu Yan, Huan Lin, Xiaomei Huang, Changhong Liang, Guoqiang Han, Zaiyi Liu, Medical Image Analysis, 2022.[[Paper]](https://doi.org/10.1016/j.media.2022.102487)
 
 We present a tissue semantic segmentation model for histopathology images using only patch-level classification labels, which greatly saves the annotation time for pathologists. Multi-layer pseudo-supervision with progressive dropout attention is proposed to reduce the information gap between patch-level and pixellevel labels. And a classification gate mechanism is introduced to reduce the false-positive rate.
 
