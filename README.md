@@ -57,11 +57,10 @@ python 1_train_stage1.py --dataset luad --trainroot datasets/LUAD-HistoSeg/train
 #### 2、Generate multi-layers pesudo mask by classification model: 
 
 ```
-python 2_generate_PM.py --datasetroot datasets/LUAD-HistoSeg --dataset luad
+python 2_generate_PM.py --dataroot datasets/LUAD-HistoSeg --dataset luad --weights checkpoints/stage1_checkpoint_trained_on_luad.pth
 ```
+#### 3、Train the segmentation model with multi-layer pesudo masks: 
 
-## Reference
-1. Jiwoon Ahn and Suha Kwak. Learning pixel-level semantic affinity with image-level supervision for weakly supervised semantic segmentation. CVPR, 2018.
-2. Liang-Chieh Chen, George Papandreou, Iasonas Kokkinos, Kevin Murphy, and Alan L Yuille. Deeplab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected crfs. TPAMI, 2017.
-3. Liang-Chieh Chen, Yukun Zhu, George Papandreou, Florian Schroff, Hartwig Adam. Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation. ECCV, 2018.
-4. Weakly-Supervised Semantic Segmentation via Sub-category Exploration, Yu-Ting Chang, Qiaosong Wang, Wei-Chih Hung, Robinson Piramuthu, Yi-Hsuan Tsai and Ming-Hsuan Yang, CVPR 2020
+```
+python 3_train_stage2.py --dataset luad --dataroot datasets/LUAD-HistoSeg --epochs 20 -- Is_GM True --resume_stage1 checkpoints/stage1_checkpoint_trained_on_luad.pth --resume init_weights/deeplab-resnet.pth.tar
+```
