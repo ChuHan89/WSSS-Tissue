@@ -46,6 +46,12 @@ We would like to thank Amgad et al. for this excellent dataset. The original BCS
 ```
 bash run_pipeline.sh
 ```
+### Run each step: 
+- The whole pipeline of our model includes the step of classification model training, muleti-layer pseudo masks  generation, and segmentation model training. You can use following scripts to run each step.
+- [Note] Please specify the argument in the command. You can also check run_pipeline.sh to see more details.
+#### 1、Train the classification model with the image-level label: 
+- 
+
 ## Reference
 1. Jiwoon Ahn and Suha Kwak. Learning pixel-level semantic affinity with image-level supervision for weakly supervised semantic segmentation. CVPR, 2018.
 2. Liang-Chieh Chen, George Papandreou, Iasonas Kokkinos, Kevin Murphy, and Alan L Yuille. Deeplab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected crfs. TPAMI, 2017.
