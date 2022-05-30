@@ -38,3 +38,11 @@ We would like to thank Amgad et al. for this excellent dataset. The original BCS
 ## Prerequisite
 * To train the stage1, you need to download the pretrained weight of the [Mxnet and ResNet-38](https://github.com/itijyou/ademxapp) model [[ilsvrc-cls_rna-a1_cls1000_ep-0001.params]](https://drive.google.com/file/d/1YB3DkHiBeUH5wn6shk93jChvXwfOxwBE/view?usp=sharing)
 * To train the stage2, you need to download the pretrained weight of the [DeepLab V3+](https://github.com/) model [[...]](https://drive.google.com/)
+
+## Usage
+### Run the whole pipeline
+- In this work, our pipeline include 3 part~(Stage 1, PM generation, Stage2). You can directly run run_pipeline.sh to complete the three-part training and test.
+- [Note] To run the whole pipeline, you need to specify the dataset related hyperparameters. Please see the command in run_pipeline.sh.
+```
+bash run_pipeline.sh
+```
