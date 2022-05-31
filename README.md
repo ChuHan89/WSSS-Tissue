@@ -24,7 +24,7 @@ Download our checkpoints of the final models trained on two datasets from the [b
 - pytorch
 - torchvision
 - CUDA
-- 1×CPU
+- 1×GPU
 
 ## Usage
 ### Prerequisite
