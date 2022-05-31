@@ -50,7 +50,7 @@ WSSS-Tissue/
 bash run_pipeline.sh
 ```
 ### Run each step: 
-- The whole pipeline of our model includes the step of classification model training, muleti-layer pseudo masks  generation, and segmentation model training. You can use following scripts to run each step.
+- The whole pipeline of our model includes the step of classification model training, multi-layer pseudo masks generation, and segmentation model training. You can use following scripts to run each step.
 - [Note] Please specify the argument in the command. You can also check run_pipeline.sh to see more details.
 #### 1、Train the classification model with the image-level label: 
 
