@@ -26,6 +26,19 @@ We would like to thank Amgad et al. for this excellent dataset. The original BCS
 ### Prerequisite
 - To train the stage1 and stage2, you should download the pretrained weight of [ResNet-38](https://github.com/itijyou/ademxapp) and [DeepLab V3+](https://drive.google.com/) and put them in the **init_weights** folder.
 - And you can download our datasets ([LUAD-HistoSeg](https://drive.google.com/drive/folders/1E3Yei3Or3xJXukHIybZAgochxfn6FJpr?usp=sharing) and [BCSS-WSSS](https://drive.google.com/drive/folders/1iS2Z0DsbACqGp7m6VDJbAcgzeXNEFr77?usp=sharing)) and unpack them into the **datasets** folder.
+
+WSSS-Tissue/
+
+    |_ datasets
+    |     |_ BCSS-WSSS/
+    |         |_ train/
+    |         |_ val/
+    |         |_ test/
+    |     |_ LUAD-HistoSeg/
+    |         |_ train/
+    |         |_ val/
+    |         |_ test/
+   
 ### Run the whole pipeline
 - In this work, our pipeline include 3 part~(Stage 1, PM generation, Stage2). You can directly run run_pipeline.sh to complete the three-part training and test.
 - [Note] To run the whole pipeline, you need to specify the dataset related hyperparameters. Please see the command in run_pipeline.sh.
