@@ -12,12 +12,12 @@ We have released both datasets via Google Drive ([LUAD-HistoSeg](https://drive.g
 We would like to thank Amgad et al. for this excellent dataset. The original BCSS dataset can be download at this link [BCSS-link](https://github.com/PathologyDataScience/CrowdsourcingDataset-Amgadetal2019).
 
 ## Checkpoints
-Download our checkpoints of the final models trained on two datasets from the [baidu cloud](https://pan.baidu.com/s/1YWGw8UKwtPkx6E00XP3JTQ) (with code **on7z**):
+Download our checkpoints of the final models trained on two datasets from the [Google Drive](https://drive.google.com/drive/folders/1pRsf-TulOARYN13J-_iJNw_VUa2d1NnZ?usp=sharing) and [baidu cloud](https://pan.baidu.com/s/1YWGw8UKwtPkx6E00XP3JTQ) (with code **on7z**):
 
-- [stage1_checkpoint_trained_on_luad.pth](https://pan.baidu.com/s/1YWGw8UKwtPkx6E00XP3JTQ)
-- [stage2_checkpoint_trained_on_luad.pth](https://pan.baidu.com/s/1YWGw8UKwtPkx6E00XP3JTQ)
-- [stage1_checkpoint_trained_on_bcss.pth](https://pan.baidu.com/s/1YWGw8UKwtPkx6E00XP3JTQ)
-- [stage2_checkpoint_trained_on_bcss.pth](https://pan.baidu.com/s/1YWGw8UKwtPkx6E00XP3JTQ)
+- [stage1_checkpoint_trained_on_luad.pth](https://drive.google.com/drive/folders/1pRsf-TulOARYN13J-_iJNw_VUa2d1NnZ?usp=sharing)
+- [stage2_checkpoint_trained_on_luad.pth](https://drive.google.com/drive/folders/1pRsf-TulOARYN13J-_iJNw_VUa2d1NnZ?usp=sharing)
+- [stage1_checkpoint_trained_on_bcss.pth](https://drive.google.com/drive/folders/1pRsf-TulOARYN13J-_iJNw_VUa2d1NnZ?usp=sharing)
+- [stage2_checkpoint_trained_on_bcss.pth](https://drive.google.com/drive/folders/1pRsf-TulOARYN13J-_iJNw_VUa2d1NnZ?usp=sharing)
 
 ## Requirements
 - Python 3.7
