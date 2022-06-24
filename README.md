@@ -28,7 +28,7 @@ Download our checkpoints of the final models trained on two datasets from the [G
 
 ## Usage
 ### Prerequisite
-- To train the stage1 and stage2, you should download the pretrained weight of ResNet-38 and DeepLab V3+ from [baidu cloud](https://pan.baidu.com/s/1sQp4Na-883pSxgMWK4wcRQ)(with code **nylc**) and put them in the **init_weights** folder.
+- To train the stage1 and stage2, you should download the pretrained weight of ResNet-38 and DeepLab V3+ from [baidu cloud](https://pan.baidu.com/s/1sQp4Na-883pSxgMWK4wcRQ) (with code **nylc**) and put them in the **init_weights** folder.
 - And you can download our datasets ([LUAD-HistoSeg](https://drive.google.com/drive/folders/1E3Yei3Or3xJXukHIybZAgochxfn6FJpr?usp=sharing) and [BCSS-WSSS](https://drive.google.com/drive/folders/1iS2Z0DsbACqGp7m6VDJbAcgzeXNEFr77?usp=sharing)) and unpack them into the **datasets** folder.
 
 WSSS-Tissue/
