@@ -234,7 +234,6 @@ def main():
     for epoch in range(trainer.args.epochs):
         trainer.training(epoch)
         trainer.validation(epoch)
-    epoch = 0
     trainer.test(epoch, args.Is_GM)
     trainer.writer.close()
 
