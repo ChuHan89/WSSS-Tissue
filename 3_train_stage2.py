@@ -53,7 +53,6 @@ class Trainer(object):
             self.model = self.model.cuda()
         # Resuming checkpoint
         self.best_pred = 0.0
-        args.resume = 'checkpoints/checkpoint2.pth.tar'
         if args.resume is not None:
             if not os.path.isfile(args.resume):
                 raise RuntimeError("=> no checkpoint found at '{}'" .format(args.resume))
@@ -141,8 +140,11 @@ class Trainer(object):
                 'state_dict': self.model.module.state_dict(),
                 'optimizer': self.optimizer.state_dict()
             }, 'stage2_checkpoint_trained_on_'+self.args.dataset+'.pth')
-
+    def load_the_best_checkpoint(self):
+        checkpoint = torch.load('checkpoints/stage2_checkpoint_trained_on_'+self.args.dataset+'.pth')
+        self.model.module.load_state_dict(checkpoint['state_dict'], strict=False)
     def test(self, epoch, Is_GM):
+        self.load_the_best_checkpoint()
         self.model.eval()
         self.evaluator.reset()
         tbar = tqdm(self.test_loader, desc='\r')
@@ -187,7 +189,7 @@ def main():
     parser = argparse.ArgumentParser(description="WSSS Stage2")
     parser.add_argument('--backbone', type=str, default='resnet', choices=['resnet', 'xception', 'drn', 'mobilenet'])
     parser.add_argument('--out-stride', type=int, default=16)
-    parser.add_argument('--Is_GM', type=bool, default=False, help='Enable the Gate mechanism in test phase')
+    parser.add_argument('--Is_GM', type=bool, default=True, help='Enable the Gate mechanism in test phase')
     parser.add_argument('--dataroot', type=str, default='datasets/BCSS-WSSS/')
     parser.add_argument('--dataset', type=str, default='bcss')
     parser.add_argument('--savepath', type=str, default='checkpoints/')
@@ -212,7 +214,7 @@ def main():
     # checking point
     parser.add_argument('--resume', type=str, default='init_weights/deeplab-resnet.pth.tar')
     parser.add_argument('--checkname', type=str, default='deeplab-resnet')
-    parser.add_argument('--ft', action='store_true', default=True)
+    parser.add_argument('--ft', action='store_true', default=False)
     parser.add_argument('--eval-interval', type=int, default=1)
     args = parser.parse_args()
     args.cuda = not args.no_cuda and torch.cuda.is_available()
