@@ -112,7 +112,7 @@ def train_phase(args):
                 viz.line([avg_meter.pop('avg_ep_acc')],[optimizer.global_step],win='Acc',update='append',opts=dict(title='Acc'))
         if model.gama > 0.65:
             model.gama = model.gama*0.98
-        print('Gama of progressive dropouput attention is: ',model.gama)
+        print('Gama of progressive dropout attention is: ',model.gama)
     torch.save(model.state_dict(), os.path.join(args.save_folder, 'stage1_checkpoint_trained_on_'+args.dataset+'.pth'))
 
 def test_phase(args):
