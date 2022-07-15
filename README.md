@@ -25,6 +25,7 @@ Download our checkpoints of the final models trained on two datasets from the [G
 - torchvision
 - CUDA
 - 1×GPU
+- visdom
 
 ## Usage
 ### Prerequisite
@@ -42,7 +43,9 @@ WSSS-Tissue/
     |         |_ train/
     |         |_ val/
     |         |_ test/
-   
+ 
+- Finally, you need to launch "visdom" before running the whole pipline.
+
 ### Run the whole pipeline
 - In this work, our pipeline include 3 part~(Stage 1, PM generation, Stage2). You can directly run run_pipeline.sh to complete the three-part training and test.
 - [Note] To run the whole pipeline, you need to specify the dataset related hyperparameters. Please see the command in run_pipeline.sh.
